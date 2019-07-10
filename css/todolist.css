@@ -1,0 +1,114 @@
+*{
+	margin: 0 ;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: #CDCDCD;;
+}
+
+.header{
+	width: 375px;
+	height: 50px;
+	background: rgba(47,47,47,0.98);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 7px;
+}
+.logo{
+	font-size: 24px;
+	color: #DDD;
+}
+.input input{
+	border: none;
+	outline: none;
+	width: 216px;
+	height: 25px;
+	border-radius: 5px;
+	padding: 0 10px;
+	box-shadow: 0 1px 0 rgba(255,255,255,0.24), 0 1px 6px rgba(0,0,0,0.45) inset;
+}
+.list>h1{
+	font-size: 24px;
+	margin: 20px 15px; 
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.todo>h1 .num{
+	text-align: center;
+	line-height: 25px;
+	width: auto;
+	height: 25px;
+	padding: 0 8px;
+	background: orangered;
+	border-radius: 12px;
+	font-size: 18px;
+	color: #FFF;
+}
+
+.done>h1 .num{
+	text-align: center;
+	line-height: 25px;
+	width: auto;
+	height: 25px;
+	padding: 0 8px;
+	background: forestgreen;
+	border-radius: 12px;
+	font-size: 18px;
+	color: #FFF;
+}
+
+.item{
+	height: 35px;
+	margin: 5px 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: white;
+	border-radius: 5px;
+	padding: 0px 12px;
+	position: relative
+}
+
+.item:before{
+	content: "";
+	width: 6px;
+	height: 35px;
+	background-color: dodgerblue;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 1;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+}
+.item .checkbox{
+	display: flex;
+	align-items: center;
+}
+.item .checkbox input{
+	width: 23px;
+	height: 23px;
+	outline: none;
+}
+.item .content{
+	width: 260px;
+	padding: 0 5px;
+	line-height: 23px;
+	word-break: break-all;
+}
+.item .delete{
+	width: 23px;
+	height: 23px;
+	background-image: url(../img/垃圾桶.png);
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+.main{
+	width: 375px;
+}
